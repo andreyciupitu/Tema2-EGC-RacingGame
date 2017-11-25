@@ -16,19 +16,22 @@ public:
 	{
 		height = 0.0f;
 		size = TERRAIN_SIZE_SMALL;
-		modelMatrix = Transform3D::Scale(glm::vec3(size));
+		modelMatrix = Transform::Scale(glm::vec3(size));
 	}
 
 	~Terrain() {}
 
 	float GetHeight() { return height; }
 
+	// Scaling factor for the preset mesh
 	TerrainSize GetSize() { return size; }
 	void SetSize(TerrainSize s)
 	{
 		size = s;
-		modelMatrix = Transform3D::Scale(glm::vec3(size));
+		modelMatrix = Transform::Scale(glm::vec3((float)size));
 	}
+
+	virtual glm::mat4 GetModel() override { return modelMatrix; }
 
 private:
 	TerrainSize size;

@@ -5,7 +5,14 @@
 class RenderableObject
 {
 public:
-	RenderableObject() {}
+	RenderableObject() 
+	{
+		texture = TextureManager::GetTexture("default.png");
+		shader = ShaderManager::GetShader("Simple");
+		baseColor = glm::vec3(1);
+		modelMatrix = glm::mat4(1);
+	}
+
 	virtual ~RenderableObject() {}
 
 	Mesh* GetMesh() { return mesh; }
@@ -24,8 +31,8 @@ public:
 	glm::vec3 GetBaseColor() { return baseColor; }
 	void SetBaseColor(const glm::vec3 &color) { baseColor = color; }
 
-	glm::mat4 GetModel() { return modelMatrix; }
-	void SetModel(const glm::mat4 &model) { modelMatrix = model; }
+	// Override for each specific object type(props, effects, terrain)
+	virtual glm::mat4 GetModel() = 0;
 
 protected:
 	Mesh *mesh;

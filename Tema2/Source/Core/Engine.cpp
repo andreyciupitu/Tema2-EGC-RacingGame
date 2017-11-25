@@ -29,6 +29,8 @@ WindowObject* Engine::Init(WindowProperties & props)
 	}
 
 	TextureManager::Init();
+	ShaderManager::Init();
+	MeshManager::Init();
 
 	return window;
 }

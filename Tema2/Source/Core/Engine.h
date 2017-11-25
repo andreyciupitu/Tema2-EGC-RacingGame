@@ -20,6 +20,8 @@
 
 #include <Core/Managers/ResourcePath.h>
 #include <Core/Managers/TextureManager.h>
+#include <Core/Managers/ShaderManager.h>
+#include <Core/Managers/MeshManager.h>
 
 #include <Core/Window/WindowObject.h>
 #include <Core/Window/InputController.h>

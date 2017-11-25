@@ -27,6 +27,8 @@
     <ClCompile Include="..\Source\Core\GPU\Mesh.cpp" />
     <ClCompile Include="..\Source\Core\GPU\Shader.cpp" />
     <ClCompile Include="..\Source\Core\GPU\Texture2D.cpp" />
+    <ClCompile Include="..\Source\Core\Managers\MeshManager.cpp" />
+    <ClCompile Include="..\Source\Core\Managers\ShaderManager.cpp" />
     <ClCompile Include="..\Source\Core\Managers\TextureManager.cpp" />
     <ClCompile Include="..\Source\Core\Window\InputController.cpp" />
     <ClCompile Include="..\Source\Core\Window\WindowCallbacks.cpp" />
@@ -45,9 +47,10 @@
     <ClCompile Include="..\Source\Laboratoare\Laborator8\Laborator8.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator9\Laborator9.cpp" />
     <ClCompile Include="..\Source\Main.cpp" />
-    <ClCompile Include="..\Source\RacingGame\Character.cpp" />
+    <ClCompile Include="..\Source\RacingGame\Car.cpp" />
     <ClCompile Include="..\Source\RacingGame\GameWorld.cpp" />
     <ClCompile Include="..\Source\RacingGame\Geometry3D.cpp" />
+    <ClCompile Include="..\Source\RacingGame\Road.cpp" />
     <ClCompile Include="..\Source\RacingGame\SpatialObject.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -59,7 +62,9 @@
     <ClInclude Include="..\Source\Core\GPU\Mesh.h" />
     <ClInclude Include="..\Source\Core\GPU\Shader.h" />
     <ClInclude Include="..\Source\Core\GPU\Texture2D.h" />
+    <ClInclude Include="..\Source\Core\Managers\MeshManager.h" />
     <ClInclude Include="..\Source\Core\Managers\ResourcePath.h" />
+    <ClInclude Include="..\Source\Core\Managers\ShaderManager.h" />
     <ClInclude Include="..\Source\Core\Managers\TextureManager.h" />
     <ClInclude Include="..\Source\Core\Window\InputController.h" />
     <ClInclude Include="..\Source\Core\Window\WindowCallbacks.h" />
@@ -84,13 +89,17 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator7\Laborator7.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator8\Laborator8.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator9\Laborator9.h" />
-    <ClInclude Include="..\Source\RacingGame\Character.h" />
+    <ClInclude Include="..\Source\RacingGame\Buff.h" />
+    <ClInclude Include="..\Source\RacingGame\Camera.h" />
+    <ClInclude Include="..\Source\RacingGame\Car.h" />
     <ClInclude Include="..\Source\RacingGame\GameWorld.h" />
     <ClInclude Include="..\Source\RacingGame\Geometry3D.h" />
     <ClInclude Include="..\Source\RacingGame\RenderableObject.h" />
+    <ClInclude Include="..\Source\RacingGame\Skybox.h" />
     <ClInclude Include="..\Source\RacingGame\SpatialObject.h" />
+    <ClInclude Include="..\Source\RacingGame\Road.h" />
     <ClInclude Include="..\Source\RacingGame\Terrain.h" />
-    <ClInclude Include="..\Source\RacingGame\Transform3D.h" />
+    <ClInclude Include="..\Source\RacingGame\Transform.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\RacingGame\Shaders\TerrainShader.VS.glsl" />

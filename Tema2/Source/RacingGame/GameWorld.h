@@ -1,13 +1,18 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 #include <Component/SimpleScene.h>
 #include <RacingGame/RenderableObject.h>
-#include <RacingGame/Character.h>
+#include <RacingGame/Car.h>
 #include <RacingGame/Terrain.h>
+#include <RacingGame/Road.h>
+#include <RacingGame/Camera.h>
+#include <RacingGame/Skybox.h>
+#include <RacingGame/Buff.h>
 
-class GameWorld : public SimpleScene
+class GameWorld : public World
 {
 public:
 	GameWorld() {}
@@ -21,11 +26,24 @@ private:
 	virtual void FrameEnd() override;
 
 	void Render(RenderableObject *obj);
+	void RenderWheels();
+	void GeneratePickup(int i, bool newRoad = false);
 
-	virtual void OnKeyPress(int key, int mods) override {};
-	virtual void OnInputUpdate(float deltaTime, int mods) override {};
+	virtual void OnKeyPress(int key, int mods) override;
+	virtual void OnKeyRelease(int key, int mods) override;
+	virtual void OnInputUpdate(float deltaTime, int mods) override;
+	virtual void OnMouseMove(int mouseX, int mouseY, int deltaX, int deltaY) override;
 
 private:
-	RenderableObject *skybox;
+	Camera *camera;
+	Skybox *skybox;
 	Terrain *terrain;
+	Road *road;
+	std::vector<Buff*> pickups;
+	Car *player;
+	unsigned int drawMode;
+	bool firstPersonCamera;
+	float friction;
+
+	SpatialObject* wheels[4];
 };

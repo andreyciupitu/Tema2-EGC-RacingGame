@@ -145,9 +145,6 @@
     <ClCompile Include="..\Source\Laboratoare\Laborator9\Laborator9.cpp">
       <Filter>Laboratoare\Laborator9</Filter>
     </ClCompile>
-    <ClCompile Include="..\Source\RacingGame\Character.cpp">
-      <Filter>RacingGame</Filter>
-    </ClCompile>
     <ClCompile Include="..\Source\RacingGame\SpatialObject.cpp">
       <Filter>RacingGame</Filter>
     </ClCompile>
@@ -155,6 +152,18 @@
       <Filter>RacingGame</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\RacingGame\GameWorld.cpp">
+      <Filter>RacingGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Managers\ShaderManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Managers\MeshManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RacingGame\Road.cpp">
+      <Filter>RacingGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RacingGame\Car.cpp">
       <Filter>RacingGame</Filter>
     </ClCompile>
   </ItemGroup>
@@ -237,9 +246,6 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator4\Laborator4.h">
       <Filter>Laboratoare\Laborator4</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Laboratoare\Laborator4\Transform3D.h">
-      <Filter>Laboratoare\Laborator4</Filter>
-    </ClInclude>
     <ClInclude Include="..\Source\Laboratoare\Laborator5\Laborator5.h">
       <Filter>Laboratoare\Laborator5</Filter>
     </ClInclude>
@@ -258,13 +264,7 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator9\Laborator9.h">
       <Filter>Laboratoare\Laborator9</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\RacingGame\Character.h">
-      <Filter>RacingGame</Filter>
-    </ClInclude>
     <ClInclude Include="..\Source\RacingGame\SpatialObject.h">
-      <Filter>RacingGame</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\RacingGame\Transform3D.h">
       <Filter>RacingGame</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\RacingGame\Geometry3D.h">
@@ -278,6 +278,33 @@
     </ClInclude>
     <ClInclude Include="..\Source\RacingGame\RenderableObject.h">
       <Filter>RacingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Managers\ShaderManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RacingGame\Skybox.h">
+      <Filter>RacingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RacingGame\Camera.h">
+      <Filter>RacingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Managers\MeshManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RacingGame\Road.h">
+      <Filter>RacingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RacingGame\Car.h">
+      <Filter>RacingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RacingGame\Buff.h">
+      <Filter>RacingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RacingGame\Transform.h">
+      <Filter>RacingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Laboratoare\Laborator4\Transform3D.h">
+      <Filter>Laboratoare\Laborator4</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
